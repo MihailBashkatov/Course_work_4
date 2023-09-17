@@ -17,7 +17,7 @@ class SuperJobAPI(AbstractSuperJobAPI):
                       'count': 100,
                       'keyword': self.name}
 
-        # pulling info from Superjob and transgform it in json format
+        # pulling info from Superjob and transform it in json format
         request = requests.get('https://api.superjob.ru/2.0/vacancies',
                                params=url_params,
                                headers=headers)
