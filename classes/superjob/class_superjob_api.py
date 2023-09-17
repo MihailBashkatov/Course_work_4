@@ -9,7 +9,7 @@ class SuperJobAPI(AbstractSuperJobAPI):
     def __init__(self, name):
         self.name = name
 
-    def get_page_superjob(self, url_params=None, page=0):
+    def get_page_superjob(self, page=None, url_params=None):
 
         # Defining entering data
         headers = {'X-Api-App-Id': SECRET_KEY}
