@@ -80,15 +80,15 @@ class GetVacancy(HeadHunterAPI, SuperJobAPI, InitializeVacancy):
                     data['payment_to'] = 'No info available'
 
                 # Unifying json_list parameters to attributes of class InitializeVacancy
-                vacancy_id = int(data['id'])
-                vacancy_name = data['profession']
-                employer_name = data['firm_name']
-                vacancy_description = data['candidat']
-                salary_from = data['payment_from']
-                salary_to = data['payment_to']
-                salary_currency = data['currency']
-                url = data['link']
-                city = data['town']['title']
+                vacancy_id: int = int(data['id'])
+                vacancy_name: str = data['profession']
+                employer_name: str = data['firm_name']
+                vacancy_description: str = data['candidat']
+                salary_from: str = data['payment_from']
+                salary_to: str = data['payment_to']
+                salary_currency: str = data['currency']
+                url: str = data['link']
+                city: str = data['town']['title']
                 self.vacancies_all.append(InitializeVacancy(self.name,
                                                             vacancy_id,
                                                             vacancy_name,
