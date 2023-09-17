@@ -76,7 +76,7 @@ def user_interaction():
             else:
                 break
 
-        # Defining if sorting is needed
+        # Defining if sorting is needed. Sorting is done per vacancy name
         is_sort_data = input('Do you want to sort data? If yes, insert [1]. If no, insert [any button]')
         if is_sort_data == '1':
 
